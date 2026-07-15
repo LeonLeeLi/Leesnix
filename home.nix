@@ -15,6 +15,8 @@
     codex
     qq
     wechat
+    bottles
+    cherry-studio
   ];
   systemd.user.enable=true;
 
