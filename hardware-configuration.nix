@@ -27,6 +27,13 @@
   fileSystems."/home/leonlee/DataDisk" =
     { device = "/dev/disk/by-uuid/00CFE7BE3AFAD309";
       fsType = "ntfs3";
+      options = [
+        "uid=1000"
+        "gid=100"
+        "nofail"
+        "noauto"
+        "x-systemd.automount"
+      ];
     };
 
   swapDevices = [ ];

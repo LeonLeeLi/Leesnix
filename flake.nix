@@ -9,8 +9,12 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    llm-agents = {
+      url = "github:numtide/llm-agents.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  outputs = { self, nixpkgs, home-manager, nur, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nur, llm-agents, ... }@inputs: {
       nixosConfigurations.LeonLee = nixpkgs.lib.nixosSystem {
         modules = [
           ./configuration.nix
@@ -20,7 +24,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.users.leonlee = ./home.nix;
+            home-manager.users.leonlee = ./home;
           }
         ];
       };
