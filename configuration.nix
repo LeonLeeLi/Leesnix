@@ -122,6 +122,8 @@
 
   # 虚拟机
   virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+
   users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
 
   system.stateVersion = "26.05";
