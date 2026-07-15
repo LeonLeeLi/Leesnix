@@ -5,5 +5,6 @@
     ./packages.nix
     ./programs
     ./systemd.nix
+    ./environment.nix
   ];
 }

@@ -1,4 +1,6 @@
-{ ... }:
+{ config, ... }:
 {
-  environment.variables.EDITOR = "nano";
+  environment.variables = {
+    EDITOR = "nano";
+  };
 }
