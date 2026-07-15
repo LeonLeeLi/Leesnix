@@ -13,6 +13,8 @@
     qt6Packages.fcitx5-configtool
     claude-code
     codex
+    qq
+    wechat
   ];
   systemd.user.enable=true;
 
