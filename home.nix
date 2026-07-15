@@ -10,8 +10,13 @@
     vscode
     google-chrome
     devbox
+    qt6Packages.fcitx5-configtool
+    claude-code
+    codex
   ];
   systemd.user.enable=true;
+
+
 
   programs.vscode = {
     enable = true;

@@ -6,6 +6,9 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+
+  hardware.bluetooth.enable = true;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.substituters = [ "https://mirrors.ustc.edu.cn/nix-channels/store" "https://cache.nixos.org/" ];
   # Bootloader.
@@ -24,6 +27,19 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "zh_CN.UTF-8";
+  i18n.inputMethod = {
+    enable = true;
+    type = "fcitx5";
+    fcitx5 = {
+      waylandFrontend = true;
+      addons = [
+        (pkgs.fcitx5-rime.override {
+          rimeDataPkgs = [ pkgs.rime-ice ];
+        })
+      ];
+    };
+  };
+
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "zh_CN.UTF-8";
@@ -94,8 +110,13 @@
     git
     pkgs.noto-fonts-cjk-sans
     ntfs3g
+    throne
   ];
 
+  programs.throne = {
+    enable = true;
+    tunMode.enable = true;
+  };
 
 
   system.stateVersion = "26.05";
