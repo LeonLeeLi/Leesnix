@@ -17,12 +17,26 @@
       url = "github:leonleeli/LeesNixPackage";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  outputs = { self, nixpkgs, home-manager, nur, llm-agents, ... }@inputs: {
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nur,
+      llm-agents,
+      nix-index-database,
+      ...
+    }@inputs:
+    {
       nixosConfigurations.LeonLee = nixpkgs.lib.nixosSystem {
         modules = [
           ./configuration.nix
-          ({...}:{nixpkgs.overlays = [ nur.overlays.default ];})
+          ({ ... }: { nixpkgs.overlays = [ nur.overlays.default ]; })
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -30,9 +44,10 @@
             home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.users.leonlee = ./home;
           }
+          nix-index-database.nixosModules.default
+
         ];
       };
     };
-
 
 }
