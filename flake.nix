@@ -32,6 +32,10 @@
       nix-index-database,
       ...
     }@inputs:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+    in
     {
       nixosConfigurations.LeonLee = nixpkgs.lib.nixosSystem {
         modules = [
@@ -44,8 +48,14 @@
             home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.users.leonlee = ./home;
           }
-          nix-index-database.nixosModules.default
+        ];
+      };
 
+      homeConfigurations.leonlee = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [
+          nix-index-database.homeModules.default
         ];
       };
     };
