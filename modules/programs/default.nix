@@ -4,5 +4,6 @@
     ./steam.nix
     ./_1password.nix
     ./throne.nix
+    ./zsh.nix
   ];
 }

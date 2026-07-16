@@ -1,4 +1,10 @@
-{ config, pkgs, lib, inputs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  inputs,
+  ...
+}:
 {
   imports = [
     ./user.nix
@@ -7,4 +13,5 @@
     ./systemd.nix
     ./environment.nix
   ];
+
 }
