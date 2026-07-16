@@ -2,6 +2,7 @@
 {
   home.sessionVariables = {
     NPM_CONFIG_PREFIX = "${config.home.homeDirectory}/.npm-global";
+    ZSH_AUTOSUGGEST_USE_ASYNC=true;
   };
 
     home.sessionPath = [

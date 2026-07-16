@@ -16,6 +16,7 @@
       nixfmt
       feishu
       nodejs
+      nix-index
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli

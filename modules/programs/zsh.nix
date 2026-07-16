@@ -8,7 +8,8 @@
         ohMyZsh = {
             enable = true;
             plugins = [
-                git
+                "git"
+                "z"
             ];
         theme = "bira";
         };

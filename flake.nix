@@ -13,6 +13,10 @@
       url = "github:numtide/llm-agents.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    leesnix = {
+      url = "github:leonleeli/LeesNixPackage";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = { self, nixpkgs, home-manager, nur, llm-agents, ... }@inputs: {
       nixosConfigurations.LeonLee = nixpkgs.lib.nixosSystem {

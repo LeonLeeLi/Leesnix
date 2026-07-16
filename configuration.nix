@@ -11,5 +11,6 @@
     ./modules/users
     ./modules/environment.nix
     ./modules/state.nix
+    ./modules/nvidia.nix
   ];
 }
