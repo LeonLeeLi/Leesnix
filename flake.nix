@@ -51,6 +51,18 @@
         inherit pkgs;
 
         modules = [
+                ({ pkgs, ... }: {
+          # 全局禁用 LLVM 测试（推荐写法）
+          nixpkgs.overlays = [
+            (final: prev: {
+              llvmPackages = prev.llvmPackages // {
+                llvm = prev.llvmPackages.llvm.overrideAttrs (old: {
+                  doCheck = false;
+                });
+              };
+            })
+          ];
+        })
         ];
       };
     };
