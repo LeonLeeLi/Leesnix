@@ -5,5 +5,6 @@
     git
     noto-fonts-cjk-sans
     ntfs3g
+    gamemode
   ];
 }

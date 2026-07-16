@@ -2,8 +2,8 @@
   description = "LeonLee's flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
-    home-manager.url = "github:nix-community/home-manager/release-26.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nur = {
       url = "github:nix-community/NUR";
@@ -17,10 +17,6 @@
       url = "github:leonleeli/LeesNixPackage";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-index-database = {
-      url = "github:nix-community/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
   outputs =
     {
@@ -29,7 +25,7 @@
       home-manager,
       nur,
       llm-agents,
-      nix-index-database,
+
       ...
     }@inputs:
     let
@@ -55,7 +51,6 @@
         inherit pkgs;
 
         modules = [
-          nix-index-database.homeModules.default
         ];
       };
     };

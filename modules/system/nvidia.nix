@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
 
   hardware.graphics.enable = true;
@@ -7,6 +7,8 @@
   hardware.nvidia.nvidiaSettings = true;
   hardware.nvidia.nvidiaPersistenced = true;
   hardware.nvidia.powerManagement.enable = true;
-  boot.kernelParams = [ "modprobe.blacklist=nouveau" ];
+  hardware.nvidia.dynamicBoost.enable = lib.mkForce true;
+  boot.blacklistedKernelModules = [ "nouveau" ];
+  boot.kernelParams = [ "module_blacklist=i915" ];
 
 }
