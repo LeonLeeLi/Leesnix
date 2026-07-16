@@ -12,7 +12,6 @@
     ./programs
     ./systemd.nix
     ./environment.nix
-    ./nixoverlay.nix
   ];
 
 }
