@@ -51,23 +51,12 @@
         inherit pkgs;
 
         modules = [
-          ({ pkgs, ... }: {
-            # 全局禁用 LLVM 测试（推荐写法）
-            nixpkgs.overlays = [
-              (final: prev: {
-                llvmPackages = prev.llvmPackages // {
-                  llvm = prev.llvmPackages.llvm.overrideAttrs (old: {
-                    doCheck = false;
-                  });
-                };
-              })
-            ];
-          })
+
         ];
       };
       nixConfig = {
         max-jobs = "auto"; # 同时构建数 = CPU 核心数
-        cores = 8; # 单个 job 最多用 4 核（根据你的 CPU 调整）
+        cores = 4; # 单个 job 最多用 4 核（根据你的 CPU 调整）
 
         # 或者反过来——看你内存情况
         # max-jobs = 4;
