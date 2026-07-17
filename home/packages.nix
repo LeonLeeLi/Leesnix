@@ -10,7 +10,6 @@
       codex
       qq
       wechat
-      bottles
       cherry-studio
       nixd
       nixfmt
