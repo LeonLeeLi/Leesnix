@@ -22,6 +22,8 @@
       lutris
       # bottles
       git-cola
+      gitkraken
+      detect-it-easy
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli
