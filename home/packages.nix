@@ -19,6 +19,8 @@
       osu-lazer-bin
       pear-desktop
       devenv
+      lutris
+      # bottles
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli
