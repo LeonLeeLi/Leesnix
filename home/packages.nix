@@ -21,6 +21,7 @@
       devenv
       lutris
       # bottles
+      git-cola
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli
