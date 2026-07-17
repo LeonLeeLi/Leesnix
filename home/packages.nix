@@ -15,7 +15,6 @@
       nixfmt
       feishu
       nodejs
-      nix-index
       osu-lazer-bin
       pear-desktop
       devenv
