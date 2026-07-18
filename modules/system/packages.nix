@@ -7,5 +7,8 @@
     ntfs3g
     gamemode
     alsa-utils
+    alsa-firmware
+    alsa-lib
+    pipewire
   ];
 }
