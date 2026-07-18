@@ -96,18 +96,18 @@
         "type": "github"
       }
     },
-    "leesnix": {
+    "leespackage": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1784180238,
-        "narHash": "sha256-g+DEELW6dZJ0p4daNQRjlcj22NIVsqneCd488NewYyE=",
+        "lastModified": 1784344950,
+        "narHash": "sha256-gcuBa24+bkmkZ4wc+Rfae5RDqcnMqkxPX32Ow90/D3c=",
         "owner": "leonleeli",
         "repo": "LeesNixPackage",
-        "rev": "5054cec6b139f2bff8522031786461c6b11c5cb1",
+        "rev": "8efe81643463c428a337dcf242e1d193bc7f3c81",
         "type": "github"
       },
       "original": {
@@ -127,11 +127,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1784269728,
-        "narHash": "sha256-y6VXjRhFxOvlZRk6dd5rWhSKV4s6X6k6Fas7Up4o9DI=",
+        "lastModified": 1784343140,
+        "narHash": "sha256-+xUTmlEXoFwJN+llRGS1q45tfjP6gwswL13R1q+bzsY=",
         "owner": "numtide",
         "repo": "llm-agents.nix",
-        "rev": "dd58861b6a18526539120523960ab0ac3b455b8d",
+        "rev": "a3da1be8b403f7bce07cd94847ef6c3fbcbd9314",
         "type": "github"
       },
       "original": {
@@ -184,11 +184,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1784283070,
-        "narHash": "sha256-VMHvjqaM8+5GzR+g17xBaBgbb1tEsykKxwPZiztuecs=",
+        "lastModified": 1784344985,
+        "narHash": "sha256-kncMOeyHataj545l2piGOJJIT/R47A/iPQ9iEg1/6xI=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "4624ba037348951b2f8427ac5c7491b97a83fc20",
+        "rev": "13206369159053e0eb9d50484cc1c3d0e1a001a9",
         "type": "github"
       },
       "original": {
@@ -200,7 +200,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "leesnix": "leesnix",
+        "leespackage": "leespackage",
         "llm-agents": "llm-agents",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",

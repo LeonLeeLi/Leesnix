@@ -13,7 +13,7 @@
       url = "github:numtide/llm-agents.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    leesnix = {
+    leespackage = {
       url = "github:leonleeli/LeesNixPackage";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -56,6 +56,7 @@
 
         modules = [
           nix-index-database.homeModules.default
+          { programs.nix-index-database.comma.enable = true; }
         ];
       };
 

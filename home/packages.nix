@@ -23,9 +23,10 @@
       git-cola
       gitkraken
       detect-it-easy
+      ov
+      wl-clipboard
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli
     ]);
-
 }
