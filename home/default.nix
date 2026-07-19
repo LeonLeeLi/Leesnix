@@ -12,6 +12,8 @@
     ./programs
     ./systemd.nix
     ./environment.nix
+    ./audio.nix
+
   ];
 
 }

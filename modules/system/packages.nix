@@ -6,10 +6,7 @@
     noto-fonts-cjk-sans
     ntfs3g
     gamemode
-    alsa-utils
-    alsa-firmware
-    alsa-lib
     pciutils
-    sof-firmware
+
   ];
 }

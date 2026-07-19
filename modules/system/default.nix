@@ -5,7 +5,6 @@
     ./networking.nix
     ./locale.nix
     ./nix.nix
-    ./audio.nix
     ./packages.nix
     ./nvidia.nix
     ./core.nix

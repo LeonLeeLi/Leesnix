@@ -4,7 +4,11 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     description = "Leon Lee";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "audio"
+    ];
     packages = with pkgs; [
       kdePackages.kate
     ];
