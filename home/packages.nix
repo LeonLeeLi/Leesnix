@@ -26,7 +26,7 @@
       ov
       wl-clipboard
       obs-studio
-      pavucontrol
+      nh
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli

@@ -8,5 +8,7 @@
     ./packages.nix
     ./nvidia.nix
     ./core.nix
+    ./audio.nix
+
   ];
 }
