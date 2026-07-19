@@ -96,26 +96,6 @@
         "type": "github"
       }
     },
-    "leespackage": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1784344950,
-        "narHash": "sha256-gcuBa24+bkmkZ4wc+Rfae5RDqcnMqkxPX32Ow90/D3c=",
-        "owner": "leonleeli",
-        "repo": "LeesNixPackage",
-        "rev": "8efe81643463c428a337dcf242e1d193bc7f3c81",
-        "type": "github"
-      },
-      "original": {
-        "owner": "leonleeli",
-        "repo": "LeesNixPackage",
-        "type": "github"
-      }
-    },
     "llm-agents": {
       "inputs": {
         "bun2nix": "bun2nix",
@@ -200,7 +180,6 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "leespackage": "leespackage",
         "llm-agents": "llm-agents",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",

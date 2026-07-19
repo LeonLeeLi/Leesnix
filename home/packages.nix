@@ -25,9 +25,12 @@
       detect-it-easy
       ov
       wl-clipboard
+      obs-studio
+      pavucontrol
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli
       cli-proxy-api
     ]);
+
 }

@@ -9,6 +9,7 @@
     alsa-utils
     alsa-firmware
     alsa-lib
-    pipewire
+    pciutils
+    sof-firmware
   ];
 }
