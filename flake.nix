@@ -50,7 +50,7 @@
 
       homeConfigurations.leonlee = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
+        
         modules = [
           nix-index-database.homeModules.default
           { programs.nix-index-database.comma.enable = true; }

@@ -30,8 +30,15 @@
       nh
       ventoy-full-gtk
       pear-desktop
+      easyeffects
+      fastfetch
+      ncdu
+      lmms-full
+      yabridge
+      yabridgectl
+      hmcl
     ])
-    ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
+    ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli
       cli-proxy-api
     ]);
