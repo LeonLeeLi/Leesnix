@@ -1,5 +1,6 @@
 {
   imports = [
+    ./audio.nix
     ./boot.nix
     ./bluetooth.nix
     ./networking.nix
@@ -8,7 +9,6 @@
     ./packages.nix
     ./nvidia.nix
     ./core.nix
-    ./audio.nix
 
   ];
 }

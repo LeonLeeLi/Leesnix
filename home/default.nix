@@ -10,7 +10,6 @@
     ./user.nix
     ./packages.nix
     ./programs
-    ./systemd.nix
     ./environment.nix
 
   ];

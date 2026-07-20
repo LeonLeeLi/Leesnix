@@ -5,6 +5,7 @@
       vscode
       google-chrome
       devbox
+      devenv
       qt6Packages.fcitx5-configtool
       claude-code
       codex
@@ -27,6 +28,8 @@
       wl-clipboard
       obs-studio
       nh
+      ventoy-full-gtk
+      pear-desktop
     ])
     ++ (with inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
       cc-switch-cli

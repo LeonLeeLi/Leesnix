@@ -9,6 +9,6 @@
   hardware.nvidia.powerManagement.enable = true;
   hardware.nvidia.dynamicBoost.enable = lib.mkForce true;
   boot.blacklistedKernelModules = [ "nouveau" ];
-  boot.kernelParams = [ "i915.modeset=0" ];
+
 
 }
