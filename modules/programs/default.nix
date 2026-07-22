@@ -5,5 +5,6 @@
     ./_1password.nix
     ./throne.nix
     ./zsh.nix
+    ./steamconfig.nix
   ];
 }
