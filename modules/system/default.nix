@@ -9,6 +9,7 @@
     ./packages.nix
     ./nvidia.nix
     ./core.nix
+    ./lact.nix
 
   ];
 }

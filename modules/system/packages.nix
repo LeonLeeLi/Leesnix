@@ -7,5 +7,6 @@
     ntfs3g
     pciutils
     psmisc
+    lact
   ];
 }

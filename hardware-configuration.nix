@@ -48,7 +48,6 @@
       "umask=0022"
       "exec"
       "user"
-      "umask=000"
     ];
   };
 
