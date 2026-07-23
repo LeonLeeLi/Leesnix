@@ -8,5 +8,6 @@
     pciutils
     psmisc
     lact
+    powerstat
   ];
 }

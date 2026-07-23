@@ -6,5 +6,6 @@
     ./throne.nix
     ./zsh.nix
     ./steamconfig.nix
+    ./aria2.nix
   ];
 }

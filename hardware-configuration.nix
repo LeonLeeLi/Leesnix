@@ -42,12 +42,14 @@
     device = "/dev/disk/by-uuid/00CFE7BE3AFAD309";
     fsType = "ntfs3";
     options = [
-      "rw"
+      "default"
       "uid=1000"
-      "gid=1000"
-      "umask=0022"
-      "exec"
+      "gid=100"
+      "rw"
       "user"
+      "exec"
+      "umask=000"
+      "nofail"
     ];
   };
 
