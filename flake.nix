@@ -18,6 +18,8 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak/";
+
   };
   outputs =
     {
@@ -27,6 +29,7 @@
       nur,
       llm-agents,
       nix-index-database,
+      nix-flatpak,
       ...
     }@inputs:
     let
@@ -50,9 +53,10 @@
 
       homeConfigurations.leonlee = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        
+
         modules = [
           nix-index-database.homeModules.default
+          nix-flatpak.nixosModules.nix-flatpak
           { programs.nix-index-database.comma.enable = true; }
         ];
       };

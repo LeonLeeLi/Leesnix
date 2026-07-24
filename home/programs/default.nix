@@ -3,5 +3,6 @@
     ./vscode.nix
     ./nix-index.nix
     ./java.nix
+    ./flatpak.nix
   ];
 }
