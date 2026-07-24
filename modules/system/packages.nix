@@ -9,5 +9,7 @@
     psmisc
     lact
     powerstat
+    aria2
+    gparted
   ];
 }

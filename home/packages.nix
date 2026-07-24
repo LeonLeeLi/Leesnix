@@ -20,7 +20,6 @@
       pear-desktop
       devenv
       lutris
-      # bottles
       git-cola
       gitkraken
       detect-it-easy
