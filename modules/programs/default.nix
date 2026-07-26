@@ -8,5 +8,6 @@
     ./steamconfig.nix
     ./aria2.nix
     ./virtm.nix
+    ./flatpak.nix
   ];
 }
