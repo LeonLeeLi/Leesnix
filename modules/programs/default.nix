@@ -7,5 +7,6 @@
     ./zsh.nix
     ./steamconfig.nix
     ./aria2.nix
+    ./virtm.nix
   ];
 }

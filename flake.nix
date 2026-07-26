@@ -18,6 +18,10 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    leespackage = {
+      url = "github:LeonLeeLi/LeesNixPackage";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-flatpak.url = "github:gmodena/nix-flatpak/";
 
   };
@@ -30,6 +34,7 @@
       llm-agents,
       nix-index-database,
       nix-flatpak,
+      leespackage,
       ...
     }@inputs:
     let
@@ -56,7 +61,7 @@
 
         modules = [
           nix-index-database.homeModules.default
-          nix-flatpak.nixosModules.nix-flatpak
+          nix-flatpak.homeManagerModules.nix-flatpak
           { programs.nix-index-database.comma.enable = true; }
         ];
       };
