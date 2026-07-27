@@ -38,6 +38,8 @@
       prismlauncher
       localsend
       ariang
+      wineWow64Packages.waylandFull
+      uv
     ])
     ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli

@@ -6,7 +6,7 @@
   };
 
   home.sessionPath = [
-    "$HOME/.npm-global/bin"
+    "${config.home.homeDirectory}/.npm-global/bin"
   ];
 
   # Non-login interactive shells only source .bashrc, so bridge to .profile.

@@ -46,6 +46,7 @@
         modules = [
           ./configuration.nix
           ({ ... }: { nixpkgs.overlays = [ nur.overlays.default ]; })
+          nix-flatpak.nixosModules.nix-flatpak
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -61,7 +62,6 @@
 
         modules = [
           nix-index-database.homeModules.default
-          nix-flatpak.homeManagerModules.nix-flatpak
           { programs.nix-index-database.comma.enable = true; }
         ];
       };
