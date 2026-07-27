@@ -11,5 +11,8 @@
     powerstat
     aria2
     gparted
+    graalvmPackages.graalvm-ce
+    zulu25
+    zulu21
   ];
 }

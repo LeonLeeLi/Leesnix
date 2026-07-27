@@ -10,6 +10,6 @@
     ./nvidia.nix
     ./core.nix
     ./lact.nix
-
+    ./ld.nix
   ];
 }

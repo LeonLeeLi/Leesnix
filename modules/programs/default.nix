@@ -9,5 +9,6 @@
     ./aria2.nix
     ./virtm.nix
     ./flatpak.nix
+    ./java.nix
   ];
 }
