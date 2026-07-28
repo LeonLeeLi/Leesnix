@@ -11,8 +11,7 @@
     powerstat
     aria2
     gparted
-    graalvmPackages.graalvm-ce
-    zulu25
-    zulu21
+    podman-tui
+    podman-desktop
   ];
 }

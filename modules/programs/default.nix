@@ -10,5 +10,6 @@
     ./virtm.nix
     ./flatpak.nix
     ./java.nix
+    ./podman.nix
   ];
 }
