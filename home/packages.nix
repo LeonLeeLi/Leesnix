@@ -22,7 +22,6 @@
       lutris
       git-cola
       gitkraken
-      detect-it-easy
       ov
       wl-clipboard
       obs-studio
@@ -40,6 +39,9 @@
       ariang
       wineWow64Packages.waylandFull
       uv
+      opencode
+      opencode-desktop
+      claude-desktop
     ])
     ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli
@@ -48,5 +50,4 @@
     ++ (with inputs.leespackage.packages.x86_64-linux; [
       zcode
     ]);
-
 }

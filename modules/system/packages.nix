@@ -13,5 +13,6 @@
     gparted
     podman-tui
     podman-desktop
+    podman-compose
   ];
 }
