@@ -7,8 +7,4 @@
 
   virtualisation.spiceUSBRedirection.enable = true;
 
-  virtualisation.incus.enable = true;
-
-  users.users.leonlee.extraGroups = [ "incus-admin" ];
-
 }

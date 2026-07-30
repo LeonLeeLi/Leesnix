@@ -19,6 +19,5 @@
     file
     powershell
     distrobox
-    distrobox-tui
   ];
 }
