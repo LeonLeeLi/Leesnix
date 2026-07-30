@@ -9,6 +9,8 @@
         jnoortheen.nix-ide
         yzhang.markdown-all-in-one
         shd101wyy.markdown-preview-enhanced
+        alefragnani.project-manager
+        ms-python.python
       ])
       ++ (with inputs.leespackage.vscode-extensions; [
         jetpack-io.devbox

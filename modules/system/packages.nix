@@ -14,5 +14,11 @@
     podman-tui
     podman-desktop
     podman-compose
+    wineWow64Packages.stagingFull
+    winetricks
+    file
+    powershell
+    distrobox
+    distrobox-tui
   ];
 }

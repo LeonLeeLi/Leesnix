@@ -7,7 +7,7 @@
     ./zsh.nix
     ./steamconfig.nix
     ./aria2.nix
-    ./virtm.nix
+    ./virt.nix
     ./flatpak.nix
     ./java.nix
     ./podman.nix

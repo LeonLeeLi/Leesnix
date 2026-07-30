@@ -1,11 +1,11 @@
 { inputs, ... }: {
   imports = [
-    inputs.codex-desktop-linux.homeManagerModules.default
+    inputs.codex.homeManagerModules.default
   ];
 
   programs.codexDesktopLinux = {
     enable = true;
-    computserUseUi.enable = true;
+    computerUseUi.enable = true;
     remoteMobileControl.enable = true;
     linuxFeatures = [
       "appshots"

@@ -37,11 +37,13 @@
       prismlauncher
       localsend
       ariang
-      wineWow64Packages.waylandFull
       uv
       opencode
       opencode-desktop
       claude-desktop
+      reaper
+      yabridge
+      musescore
     ])
     ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli
