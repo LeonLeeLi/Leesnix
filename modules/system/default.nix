@@ -12,5 +12,6 @@
     ./lact.nix
     ./ld.nix
     ./power.nix
+    ./security.nix
   ];
 }

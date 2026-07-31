@@ -1,12 +1,12 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 {
   imports = [
     inputs.noctalia.homeModules.default
   ];
-
+  programs.niri.enable = true;
   programs.noctalia = {
     enable = true;
-
+    systemd.enable = true;
     settings = {
       # This may also be a string or path to a .toml file.
       theme = {
@@ -21,4 +21,17 @@
       # };
     };
   };
+  services.xserver.enable = true;
+  services.displayManager.sddm.enable = true;
+  home.packages = (
+    with pkgs;
+    [
+      kdePackages.dolphin
+      kdePackages.konsole
+      fuzzel
+      alacritty
+      swaylock
+    ]
+  );
+  services.gnome.gnome-keyring.enable = true;
 }
