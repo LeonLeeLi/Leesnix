@@ -46,6 +46,7 @@
       musescore
       tcping-rs
       smartgit
+      git-credential-oauth
     ])
     ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli
