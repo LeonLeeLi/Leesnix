@@ -45,6 +45,7 @@
       yabridge
       musescore
       tcping-rs
+      smartgit
     ])
     ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli
