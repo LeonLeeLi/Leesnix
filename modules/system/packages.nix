@@ -19,5 +19,7 @@
     file
     powershell
     distrobox
+    kdePackages.kwalletmanager
+    xwayland-satellite
   ];
 }
