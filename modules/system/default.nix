@@ -11,5 +11,6 @@
     ./core.nix
     ./lact.nix
     ./ld.nix
+    ./power.nix
   ];
 }
