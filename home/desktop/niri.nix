@@ -6,18 +6,9 @@
   programs.noctalia = {
     enable = true;
     systemd.enable = true;
-    settings = {
-      # This may also be a string or path to a .toml file.
-      theme = {
-        mode = "dark";
-        source = "builtin";
-        builtin = "Catppuccin";
-      };
-      # wallpaper = {
-      #   enabled = true;
-      #   default.path = "/path/to/wallpapers/wallpaper.png";
-      # };
-    };
+    # theme 不在这里手动配置:stylix 开启后会通过它内置的 noctalia target
+    # 自动接管 theme.source/mode/调色板,使 noctalia 与系统 Catppuccin Mocha
+    # 配色保持一致。手动设置 theme.source 会与 stylix 的默认值冲突。
   };
   home.packages = (
     with pkgs;
