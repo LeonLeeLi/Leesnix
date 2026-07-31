@@ -83,6 +83,9 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit inputs; };
+            # 激活时若遇到已存在的同名真实文件,自动重命名为 *.bak 而非报错,
+            # 便于从备份中找回手动配置(如 VSCode settings.json)。
+            home-manager.backupFileExtension = "bak";
             home-manager.users.leonlee = ./home;
           }
         ];
