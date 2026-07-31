@@ -63,6 +63,9 @@
     in
     {
       nixosConfigurations.LeonLee = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs;
+        };
         modules = [
           ./configuration.nix
           ({ ... }: {

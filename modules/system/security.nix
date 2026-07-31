@@ -2,6 +2,7 @@
   security.polkit.enable = true;
   services.gnome.gnome-keyring.enable = true;
   security.pam.services = {
+    login.enableKwallet = true;
     sddm.enableKwallet = true;
     leonlee = {
       kwallet = {
@@ -10,6 +11,7 @@
       };
     };
   };
+  services.dbus.enable = true;
   services.dbus.packages = [ pkgs.kdePackages.kwallet ];
 
 }
