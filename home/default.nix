@@ -11,6 +11,7 @@
     ./packages.nix
     ./programs
     ./environment.nix
+    ./desktop
   ];
 
 }
