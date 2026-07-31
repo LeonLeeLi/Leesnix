@@ -19,8 +19,6 @@
       # };
     };
   };
-  stylix.enable = true;
-  stylix.polarity = "dark";
   home.packages = (
     with pkgs;
     [
