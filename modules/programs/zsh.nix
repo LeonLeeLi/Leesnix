@@ -18,6 +18,7 @@
             if [ -f /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh ]; then
               . /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
             fi
+            eval "$(direnv hook zsh)"
         '';
 
     };

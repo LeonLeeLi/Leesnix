@@ -11,6 +11,7 @@
         shd101wyy.markdown-preview-enhanced
         alefragnani.project-manager
         ms-python.python
+        golang.go
       ])
       ++ (with inputs.leespackage.vscode-extensions; [
         jetpack-io.devbox
