@@ -1,26 +1,24 @@
 { inputs, ... }:
 {
-  home-manager.users.drfoobar = {
-    imports = [
-      inputs.noctalia.homeModules.default
-    ];
+  imports = [
+    inputs.noctalia.homeModules.default
+  ];
 
-    programs.noctalia = {
-      enable = true;
+  programs.noctalia = {
+    enable = true;
 
-      settings = {
-        # This may also be a string or path to a .toml file.
-        theme = {
-          mode = "dark";
-          source = "builtin";
-          builtin = "Catppuccin";
-        };
-        programs.noctalia.systemd.enable = true;
-        # wallpaper = {
-        #   enabled = true;
-        #   default.path = "/path/to/wallpapers/wallpaper.png";
-        # };
+    settings = {
+      # This may also be a string or path to a .toml file.
+      theme = {
+        mode = "dark";
+        source = "builtin";
+        builtin = "Catppuccin";
       };
+      programs.noctalia.systemd.enable = true;
+      # wallpaper = {
+      #   enabled = true;
+      #   default.path = "/path/to/wallpapers/wallpaper.png";
+      # };
     };
   };
 }
