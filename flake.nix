@@ -33,6 +33,10 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs"; # this line is optional, prevents downloading two versions of nixpkgs but disables cache
     };
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     {
@@ -47,6 +51,7 @@
       leespackage,
       claude-desktop,
       codex,
+      stylix,
       ...
     }@inputs:
     let
@@ -72,6 +77,7 @@
             ];
           })
           nix-flatpak.nixosModules.nix-flatpak
+          stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -87,6 +93,7 @@
 
         modules = [
           nix-index-database.homeModules.default
+          stylix.homeModules.stylix
           { programs.nix-index-database.comma.enable = true; }
         ];
       };

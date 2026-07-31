@@ -1,17 +1,8 @@
 { pkgs, ... }: {
   security.polkit.enable = true;
   services.gnome.gnome-keyring.enable = true;
-  security.pam.services = {
-    login.enableKwallet = true;
-    sddm.enableKwallet = true;
-    leonlee = {
-      kwallet = {
-        enable = true;
-        package = pkgs.kdePackages.kwallet-pam; # 使用 Plasma 6 的 PAM 模块
-      };
-    };
-  };
-  services.dbus.enable = true;
-  services.dbus.packages = [ pkgs.kdePackages.kwallet ];
+  security.pam.services.login.enableGnomeKeyring = true;
+  security.pam.services.sddm.enableGnomeKeyring = true;
+  environment.variables.XDG_RUNTIME_DIR = "/run/user/1000";
 
 }

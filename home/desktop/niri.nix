@@ -3,7 +3,6 @@
   imports = [
     inputs.noctalia.homeModules.default
   ];
-  programs.niri.enable = true;
   programs.noctalia = {
     enable = true;
     systemd.enable = true;
@@ -14,15 +13,14 @@
         source = "builtin";
         builtin = "Catppuccin";
       };
-      programs.noctalia.systemd.enable = true;
       # wallpaper = {
       #   enabled = true;
       #   default.path = "/path/to/wallpapers/wallpaper.png";
       # };
     };
   };
-  services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
+  stylix.enable = true;
+  stylix.polarity = "dark";
   home.packages = (
     with pkgs;
     [
@@ -33,5 +31,4 @@
       swaylock
     ]
   );
-  services.gnome.gnome-keyring.enable = true;
 }

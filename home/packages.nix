@@ -47,8 +47,8 @@
       tcping-rs
       smartgit
       git-credential-oauth
-      tuigreet
-      greetd
+      networkmanagerapplet
+  
     ])
     ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli
