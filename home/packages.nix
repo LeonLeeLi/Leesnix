@@ -31,7 +31,6 @@
       easyeffects
       fastfetch
       ncdu
-      lmms-full
       yabridge
       yabridgectl
       prismlauncher
@@ -49,10 +48,25 @@
       git-credential-oauth
       networkmanagerapplet
       discord
+      gopeed
+      protonup-qt
+      protontricks
+      htop
+      netease-cloud-music-gtk
+      android-studio
+      _7zip-zstd
+      ghidra
+      htop
+      motrix-next
+      ardour
+      carla
+      vulkan-tools
+      termius
     ])
     ++ (with inputs.llm-agents.packages.x86_64-linux; [
       cc-switch-cli
       cli-proxy-api
+      reasonix
     ])
     ++ (with inputs.leespackage.packages.x86_64-linux; [
       zcode
