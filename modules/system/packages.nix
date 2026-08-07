@@ -20,5 +20,6 @@
     powershell
     distrobox
     xwayland-satellite
+    cudatoolkit
   ];
 }
